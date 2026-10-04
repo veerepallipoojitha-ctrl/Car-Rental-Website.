@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DriveEasy - Car Rental</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            🚗 DriveEasy
+        </div>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#cars">Cars</a>
+            <a href="#booking">Booking</a>
+            <a href="#bookings">My Bookings</a>
+        </div>
+
+    </nav>
+
+
+    <!-- Hero -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <h1>Rent Your Dream Car</h1>
+
+            <p>
+                Affordable, comfortable and reliable cars
+                for your journey.
+            </p>
+
+            <a href="#cars" class="hero-btn">
+                Explore Cars
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Search -->
+
+    <section class="search-section">
+
+        <h2>Find Your Perfect Car</h2>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search car name..."
+            >
+
+            <select id="categoryFilter">
+
+                <option value="all">All Categories</option>
+
+                <option value="Sedan">
+                    Sedan
+                </option>
+
+                <option value="SUV">
+                    SUV
+                </option>
+
+                <option value="Luxury">
+                    Luxury
+                </option>
+
+            </select>
+
+        </div>
+
+    </section>
+
+
+    <!-- Cars -->
+
+    <section class="cars-section" id="cars">
+
+        <h2>Available Cars</h2>
+
+        <div id="carContainer" class="car-container">
+
+            <!-- Cars will be generated using JavaScript -->
+
+        </div>
+
+    </section>
+
+
+    <!-- Booking -->
+
+    <section class="booking-section" id="booking">
+
+        <div class="booking-card">
+
+            <h2>📅 Book Your Car</h2>
+
+            <form id="bookingForm">
+
+                <label>
+                    Your Name
+                </label>
+
+                <input
+                    type="text"
+                    id="customerName"
+                    placeholder="Enter your name"
+                    required
+                >
+
+
+                <label>
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="customerEmail"
+                    placeholder="Enter your email"
+                    required
+                >
+
+
+                <label>
+                    Phone Number
+                </label>
+
+                <input
+                    type="tel"
+                    id="customerPhone"
+                    placeholder="Enter phone number"
+                    required
+                >
+
+
+                <label>
+                    Select Car
+                </label>
+
+                <select id="selectedCar" required>
+
+                    <option value="">
+                        Select a car
+                    </option>
+
+                </select>
+
+
+                <label>
+                    Pickup Date
+                </label>
+
+                <input
+                    type="date"
+                    id="pickupDate"
+                    required
+                >
+
+
+                <label>
+                    Return Date
+                </label>
+
+                <input
+                    type="date"
+                    id="returnDate"
+                    required
+                >
+
+
+                <div class="price-box">
+
+                    <p>
+                        Total Rental Cost
+                    </p>
+
+                    <h3 id="totalPrice">
+                        ₹0
+                    </h3>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="book-btn"
+                >
+                    Confirm Booking
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- Bookings -->
+
+    <section
+        class="bookings-section"
+        id="bookings"
+    >
+
+        <h2>📋 My Bookings</h2>
+
+        <div id="bookingContainer">
+
+            <p class="no-bookings">
+                No bookings yet.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <h3>🚗 DriveEasy Car Rental</h3>
+
+        <p>
+            Your journey, our responsibility.
+        </p>
+
+        <p>
+            © 2026 DriveEasy. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
